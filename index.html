@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zben</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --soft: #1f2937;
+  --text: #e5e7eb;
+  --sub: #9ca3af;
+  --accent1: #6366f1;
+  --accent2: #22c55e;
+  --accent3: #f59e0b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: var(--text);
+}
+
+.container {
+  max-width: 920px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== PROFILE ===== */
+.profile-box {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.profile-left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+/* ===== STATS (PILL STYLE UNIQUE) ===== */
+.stats {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.stat {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--soft);
+}
+
+.stat:nth-child(1) { border-left: 4px solid var(--accent1); }
+.stat:nth-child(2) { border-left: 4px solid var(--accent3); }
+.stat:nth-child(3) { border-left: 4px solid var(--accent2); }
+
+.stat span {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.stat b {
+  font-size: 14px;
+}
+
+/* ===== ACTION ===== */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--soft);
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background: var(--accent1);
+}
+
+/* ===== PROGRAM ===== */
+.program {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.program-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 14px);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.box {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.one .box { background: var(--accent1); }
+.two .box { background: #ec4899; }
+.three .box { background: var(--accent2); }
+
+/* EXTRA SPLIT CARD */
+.extra {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.big-card {
+  background: var(--soft);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.small-card {
+  background: var(--soft);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- PROFILE -->
+<div class="profile-box">
+  <div class="profile-left">
+    <div class="avatar">
+      <img src="IMG_20260616.jpg">
+    </div>
+
+    <div>
+      <div class=>𝗠𝗼𝗵𝗮𝘀𝗶𝗻
+</div>
+      <div class="sub">Joined: 31 aug 2026</div>
+      <div class="sub">ID➤ 7522 • </div>
+      <div class="sub">Invited by ID 4151</div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS (NEW STYLE) -->
+<div class="stats">
+  <div class="stat">
+    <span>Investment</span>
+    <b> 1000</b>
+  </div>
+  <div class="stat">
+    <span>Profit</span>
+    <b> 6%</b>
+  </div>
+  <div class="stat">
+    <span>Balance</span>
+    <b> 1000</b>
+  </div>
+</div>
+
+<!-- ACTION -->
+<div class="actions">
+  <div class="action-btn">Deposit</div>
+  <div class="action-btn">Withdraw</div>
+  <div class="action-btn">History</div>
+</div>
+
+<!-- PROGRAM -->
+<div class="program one">
+  <div class="program-header">
+    <div>x3 Program</div>
+    <small>Active</small>
+  </div>
+  <div class="grid">
+    <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+    <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+  </div>
+</div>
+
+<div class="program two">
+  <div class="program-header">
+    <div>xXx Program</div>
+    <small>Running</small>
+  </div>
+  <div class="grid">
+    <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+    <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+  </div>
+</div>
+
+<!-- EXTRA UNIQUE -->
+<div class="extra">
+  <div class="big-card">
+    <b>Performance Overview</b><br><br>
+    Clean space for future chart or data
+  </div>
+  <div class="small-card">
+    Users<br><b>00</b>
+  </div>
+</div>
+
+</div>
+
+</body>
+  </html>
